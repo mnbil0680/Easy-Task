@@ -35,6 +35,9 @@ jobs:
       - name: Copy index.html to 404.html for SPA routing
         run: cp dist/tmp/browser/index.html dist/tmp/browser/404.html
 
+      - name: Create .nojekyll file to disable Jekyll
+        run: touch dist/tmp/browser/.nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
