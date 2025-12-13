@@ -34,7 +34,7 @@ jobs:
 
       - name: Copy index.html to 404.html for SPA routing
         run: cp dist/tmp/browser/index.html dist/tmp/browser/404.html
-#
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
