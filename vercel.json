@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build:prod",
+  "outputDirectory": "dist/tmp/browser",
+  "framework": "angular",
+  "env": {
+    "SKIP_ENV_VALIDATION": "true"
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
