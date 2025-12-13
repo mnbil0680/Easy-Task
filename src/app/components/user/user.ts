@@ -7,7 +7,6 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length)
   selector: 'app-user',
   imports: [],
   templateUrl: './user.html',
-  styleUrl: './user.css',
 })
 export class User {
   @Input({required:true}) id!:string
